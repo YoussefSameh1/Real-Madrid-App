@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/player_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lunin"
+        android:background="@drawable/player_gradient"/>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        android:onClick="back"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_below="@+id/player_image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_below="@+id/name"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:       years"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="casual"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textStyle="bold"
+        android:textColor="#FF9100"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_below="@+id/age"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kit Number: "
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="casual"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/kitNumber"
+        android:layout_below="@+id/age"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kit"
+        android:textStyle="bold"
+        android:textColor="#FF9100"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_below="@+id/kitNumber"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height: "
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="casual"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_below="@+id/kitNumber"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height"
+        android:textColor="#FF9100"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_below="@+id/height"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position: "
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="casual"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_below="@+id/height"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position"
+        android:textStyle="bold"
+        android:textColor="#FF9100"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/position"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Nationality: "
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="casual"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/nation"
+        android:layout_below="@+id/position"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="190dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nationality"
+        android:textStyle="bold"
+        android:textColor="#FF9100"
+        android:textSize="30sp"/>
+
+</RelativeLayout>
